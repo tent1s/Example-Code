@@ -137,4 +137,9 @@ class SearchBooksFragment : Fragment(R.layout.fragment_search_books) {
             }
         }
     }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        adapter = null
+    }
 }
